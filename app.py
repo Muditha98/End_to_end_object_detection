@@ -1,10 +1,5 @@
-from signLanguage.logger import logging
-from signLanguage.exception import SignException
-import sys
+from signLanguage.pipeline.training_pipeline import TrainPipeline
 
-#logging.info("Testing the logger")
+obj = TrainPipeline()
 
-# try:
-#     a = 6/'8'
-# except Exception as e:
-#     raise SignException(e,sys)
+obj.run_pipeline()
