@@ -71,8 +71,7 @@ class ModelTrainer:
             shutil.rmtree("train")
             shutil.rmtree("test")
             shutil.rmtree("valid")
-            shutil.rmtree("data.yaml")
-            shutil.rmtree("signlang_dataset_labelled")
+            
 
             model_trainer_artifact = ModelTrainerArtifact(
                 trained_model_file_path="yolov5/best.pt",
@@ -86,3 +85,5 @@ class ModelTrainer:
 
         except Exception as e:
             raise SignException(e, sys)
+        
+        
