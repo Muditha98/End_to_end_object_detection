@@ -1,8 +1,8 @@
 
-# import zipfile
+import zipfile
 
-# # with zipfile.ZipFile('signlang_dataset_labelled.zip', 'r') as zip_ref:
-# #     zip_ref.extractall('.')
+with zipfile.ZipFile('signlang_dataset_labelled.zip', 'r') as zip_ref:
+    zip_ref.extractall('.')
 
 import shutil
 
